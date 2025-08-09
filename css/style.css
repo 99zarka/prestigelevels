@@ -95,7 +95,9 @@ a:hover {
 }
 
 /* FORM ELEMENTS */
-input[type=text] {
+input[type=text],
+input[type=date],
+input[type=time] {
   width: 100%;
   height: 54px;
   border: 1px solid #eee;
@@ -1264,6 +1266,13 @@ button[type=submit] {
   -ms-transition: 0.25s ease-in-out;
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
+}
+.logos h2 {
+  text-align: center;
+}
+.logos h3 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 .logos .col-lg-2 {
   border-inline-end: 1px dashed #eee;
@@ -2820,12 +2829,25 @@ button[type=submit] {
   top: -20px;
   font-weight: 600;
 }
-.contact .contact-form #contact .form-group input[type=text] {
+.contact .contact-form #contact .form-group input[type=text],
+.contact .contact-form #contact .form-group input[type=date],
+.contact .contact-form #contact .form-group input[type=time] {
   background: none;
   position: relative;
   z-index: 2;
 }
 .contact .contact-form #contact .form-group input:focus + span {
+  font-size: 13px;
+  line-height: 16px;
+  top: -20px;
+  font-weight: 600;
+}
+.contact .contact-form #contact .form-group input[type=date] + span,
+.contact .contact-form #contact .form-group input[type=time] + span {
+  top: -20px;
+}
+.contact .contact-form #contact .form-group input[type=date]:focus + span,
+.contact .contact-form #contact .form-group input[type=time]:focus + span {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
