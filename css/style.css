@@ -2913,6 +2913,11 @@ button[type=submit] {
 .footer p {
   color: #fff;
 }
+.footer h4 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 .footer .logo {
   height: 41px;
   margin-bottom: 15px;
@@ -3056,6 +3061,16 @@ button[type=submit] {
 }
 .footer .col-12 .creation a {
   color: #fff;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 /* RESPONSIVE MEDIUM  FIXES */
