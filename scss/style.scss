@@ -71,7 +71,7 @@ theme.
 
 /* BODY */
 *{outline: none !important;}
-body{margin: 0; padding: 0; font-family: 'Poppins', sans-serif; color:$color-dark;  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale;}
+body{margin: 0; padding: 0; font-family: 'Poppins', sans-serif; color:$color-dark;  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; -moz-osx-font-smoothing: grayscale;text-align: start;}
 
 /* HTML ELEMENT */
 img{max-width: 100%;}
@@ -228,7 +228,7 @@ button[type="submit"]{ height: 54px; border: none; background: $color-brown; col
 	.gallery{ margin-bottom: 20px; padding: 0; margin-inline-start: -5px; margin-inline-end: -5px;
 		li{width: 33.33333%; float: inset-inline-start; margin: 0; padding: 0 5px; list-style: none;
 			img{width: 100%;}}}
-	.social-media{ width: 100%; float:inset-inline-start; margin: 0; margin-bottom: 20px; padding: 0;
+	.social-media{ display: flex; gap: 10px; width: 100%; float:inset-inline-start; margin: 0; margin-bottom: 20px; padding: 0;
 				li{float:inset-inline-start; margin-inline-start: 5px; padding: 0; list-style: none;
 					a{ width: 40px; height: 40px; float:inset-inline-start; text-align: center; line-height: 42px; font-size: 13px; color: #fff; background: rgba(255,255,255,0.1);
 						&:hover{color: $color-dark; background: $color-light}}}}
@@ -281,7 +281,7 @@ button[type="submit"]{ height: 54px; border: none; background: $color-brown; col
 		.inner-elements{width: 100%; position: absolute; inset-inline-start: 0; top: 0;
 		.container{position: relative; height: 100vh;
 			.social-media{ width: 20px; position: absolute; inset-inline-start: 15px; top: calc(50% + 60px); transform: translateY(-50%); z-index: 4; text-align: center; 
-				h6{ width: 120px; color: #fff; transform: rotate(90deg); transform-origin:inset-inline-start; margin-inline-start: 9px; font-weight: 600; margin-bottom: 120px; font-size: 14px;}
+				h6{ width: 120px; color: #fff; transform: rotate(90deg); transform-origin:right; margin-inline-start: 9px; font-weight: 600; margin-bottom: 0px; font-size: 14px;}
 				ul{margin: 0; padding: 0;
 					&:before{content: ""; width: 1px; height: 42px; background: #fff; display: inline-block; margin-bottom: 15px; margin-top: 10px; }
 					li{margin: 0; padding: 3px 0; list-style: none;

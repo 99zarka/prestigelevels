@@ -62,6 +62,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+  text-align: start;
 }
 
 /* HTML ELEMENT */
@@ -133,13 +134,13 @@ button[type=submit] {
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
-  left: 0;
+  inset-inline-start: 0;
 }
 
 /* ACCORDION */
 .accordion {
   width: 100%;
-  float: left;
+  float: start;
   background: #fff;
   padding: 0;
 }
@@ -156,7 +157,7 @@ button[type=submit] {
 }
 .accordion .card .card-header a {
   width: 100%;
-  float: left;
+  float: start;
   font-weight: 500;
   padding: 20px 25px;
   color: #26282b;
@@ -164,9 +165,9 @@ button[type=submit] {
 }
 .accordion .card .card-header a:before {
   content: "+";
-  float: left;
+  float: start;
   text-align: center;
-  margin-right: 8px;
+  margin-inline-end: 8px;
   color: #26282b;
   font-weight: 600;
 }
@@ -193,7 +194,7 @@ button[type=submit] {
 }
 .pagination .page-item {
   display: inline-block;
-  margin-right: 6px;
+  margin-inline-end: 6px;
 }
 .pagination .page-item.active .page-link {
   background: #9f8054;
@@ -236,7 +237,7 @@ button[type=submit] {
 }
 .gallery-container .swiper-wrapper {
   width: 100%;
-  float: left;
+  float: start;
   position: relative;
 }
 .gallery-container .swiper-slide {
@@ -270,7 +271,7 @@ button[type=submit] {
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 0;
+  inset-inline-start: 0;
   top: 0;
   overflow: hidden;
   background: rgb(38, 40, 43);
@@ -282,7 +283,7 @@ button[type=submit] {
 .video-bg video {
   min-width: 100%;
   min-height: 100%;
-  float: left;
+  float: start;
   opacity: 0.15;
 }
 
@@ -295,10 +296,10 @@ button[type=submit] {
 }
 .nav-pills .nav-item {
   display: inline-block;
-  margin-right: 30px;
+  margin-inline-end: 30px;
 }
 .nav-pills .nav-item:last-child {
-  margin-right: 0;
+  margin-inline-end: 0;
 }
 .nav-pills .nav-item .nav-link {
   background: none;
@@ -566,7 +567,7 @@ button[type=submit] {
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-size: 14px;
-  padding: 0 40px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -579,7 +580,7 @@ button[type=submit] {
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
 }
 .side-navigation .menu {
-  display: none;
+  display: block;
   margin-bottom: 20px;
 }
 .side-navigation .menu ul {
@@ -597,7 +598,7 @@ button[type=submit] {
 }
 .side-navigation .menu ul li ul {
   width: 100%;
-  display: none;
+  display: block;
   padding-inline-start: 20px;
   margin-bottom: 10px;
 }
@@ -619,7 +620,9 @@ button[type=submit] {
 }
 .side-navigation .side-content {
   width: 100%;
+  padding: 20px 40px;
   display: block;
+  overflow: auto;
 }
 .side-navigation figure {
   display: block;
@@ -660,6 +663,8 @@ button[type=submit] {
   width: 100%;
 }
 .side-navigation .social-media {
+  display: flex;
+  gap: 10px;
   width: 100%;
   float: inset-inline-start;
   margin: 0;
@@ -728,7 +733,7 @@ button[type=submit] {
   margin-inline-end: 0;
   margin-inline-start: auto;
   margin-top: 5px;
-  text-align: right;
+  text-align: end;
   color: #fff;
 }
 .navbar .container .upper-side .phone-email img {
@@ -1001,10 +1006,10 @@ button[type=submit] {
   width: 120px;
   color: #fff;
   transform: rotate(90deg);
-  transform-origin: inset-inline-start;
+  transform-origin: right;
   margin-inline-start: 9px;
   font-weight: 600;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   font-size: 14px;
 }
 .slider .slider-container .inner-elements .container .social-media ul {
@@ -1082,7 +1087,7 @@ button[type=submit] {
   height: 1px;
   background: #fff;
   position: absolute;
-  inset-inline-end: calc(-100% - 20px);
+  inset-inline-end: calc(-100% + 100px);
   top: 5px;
 }
 .slider .slider-container .inner-elements .container .button-next {
@@ -1227,16 +1232,23 @@ button[type=submit] {
 }
 .intro .content-box a {
   display: inline-block;
-  color: #26282b;
+  color: #9f8054;
+
   font-weight: 600;
+  padding: 10px 30px;
+  border: 2px solid #ebcfa7;
+
 }
+
 .intro .content-box a img {
   height: 46px;
   margin-inline-end: 15px;
 }
 .intro .content-box a:hover {
-  color: #9f8054;
+  color: #26282b;
   text-decoration: none;
+  border-color: #9f8054;
+  background-color: #9f8054b7;
 }
 
 /* LOGOS */
@@ -1254,10 +1266,10 @@ button[type=submit] {
   transition: 0.25s ease-in-out;
 }
 .logos .col-lg-2 {
-  border-right: 1px dashed #eee;
+  border-inline-end: 1px dashed #eee;
 }
 .logos .col-lg-2:last-child {
-  border-right: none;
+  border-inline-end: none;
 }
 .logos figure {
   width: 100%;
@@ -1304,9 +1316,9 @@ button[type=submit] {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.benefits .col:nth-child(odd) {
+/* .benefits .col:nth-child(odd) {
   margin-top: 50px;
-}
+} */
 .benefits .col:hover figure:after {
   opacity: 1;
 }
@@ -1576,7 +1588,7 @@ button[type=submit] {
 }
 .property-plans p {
   display: block;
-  padding-right: 40%;
+  padding-inline-end: 40%;
   margin-bottom: 30px;
 }
 .property-plans table {
@@ -1600,7 +1612,7 @@ button[type=submit] {
 .property-plans .tab-nav li {
   display: inline-block;
   margin: 0;
-  margin-right: 10px;
+  margin-inline-end: 10px;
   padding: 0;
   list-style: none;
 }
@@ -2173,7 +2185,7 @@ button[type=submit] {
   color: #fff;
 }
 .sales-offices .office-box a i {
-  margin-right: 7px;
+  margin-inline-end: 7px;
 }
 .sales-offices .office-box a:hover {
   text-decoration: none;
@@ -2985,7 +2997,7 @@ button[type=submit] {
 .footer .contact-box {
   float: inset-inline-end;
   color: #fff;
-  text-align: right;
+  text-align: end;
 }
 .footer .contact-box h5 {
   margin-bottom: 10px;
@@ -3070,7 +3082,7 @@ button[type=submit] {
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
   .side-navigation .side-content {
-    display: none;
+    display: block;
   }
   .side-navigation .menu {
     display: block;
@@ -3087,7 +3099,7 @@ button[type=submit] {
   }
   .intro figure .pattern-bg {
     width: 100%;
-    left: 0;
+    inset-inline-start: 0;
   }
   .intro figure .holder {
     transform: translate(0, -45px);
@@ -3097,7 +3109,7 @@ button[type=submit] {
     width: 100%;
   }
   .intro .content-box {
-    padding-left: 0;
+    padding-inline-start: 0;
   }
   .logos figure img {
     padding: 0 10%;
@@ -3122,7 +3134,7 @@ button[type=submit] {
   }
   .faq .sidebox {
     width: 100%;
-    margin-left: 0;
+    margin-inline-start: 0;
     margin-top: 50px;
   }
   .apartment {
@@ -3130,7 +3142,7 @@ button[type=submit] {
   }
   .apartment .property-infos {
     width: 100%;
-    margin-right: 0;
+    margin-inline-end: 0;
   }
   .apartment .property-plan {
     margin: 50px 0;
@@ -3143,9 +3155,9 @@ button[type=submit] {
   }
   .blog .sidebar {
     width: 100%;
-    margin-left: 0;
-    padding-left: 0;
-    border-left: none;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+    border-inline-start: none;
   }
   .sales-team {
     padding: 80px 0;
@@ -3166,7 +3178,7 @@ button[type=submit] {
     padding: 80px 0;
   }
   .recent-gallery h3 {
-    padding-right: 0;
+    padding-inline-end: 0;
   }
   .recent-gallery .col-md-4 {
     margin-top: 0 !important;
@@ -3195,7 +3207,7 @@ button[type=submit] {
   }
   .property-calculator figure .pattern-bg {
     width: 100%;
-    left: 0;
+    inset-inline-start: 0;
   }
   .property-calculator figure .holder {
     transform: translate(0, -45px);
@@ -3205,7 +3217,7 @@ button[type=submit] {
     width: 100%;
   }
   .property-calculator .content-box {
-    padding-left: 0;
+    padding-inline-start: 0;
     margin-bottom: 150px;
   }
   .property-plans {
@@ -3224,7 +3236,7 @@ button[type=submit] {
     padding: 80px 0;
   }
   .video-bg video {
-    float: right;
+    float: end;
   }
   .certificates {
     padding: 80px 0;
@@ -3236,7 +3248,7 @@ button[type=submit] {
     display: block;
   }
   .contact .contact-form {
-    padding-left: 0;
+    padding-inline-start: 0;
     margin-top: 50px;
   }
   .blog {
@@ -3250,7 +3262,7 @@ button[type=submit] {
   }
   .footer-bar .inner figure {
     width: 70px;
-    margin-right: 0;
+    margin-inline-end: 0;
   }
   .footer-bar .inner figure img {
     height: 50px;
@@ -3265,12 +3277,12 @@ button[type=submit] {
     padding: 0;
   }
   .footer .contact-box {
-    float: left;
-    text-align: left;
+    float: start;
+    text-align: start;
     margin-top: 80px;
   }
   .footer .contact-box ul {
-    float: left;
+    float: start;
   }
 }
 /* RESPONSIVE MOBILE FIXES */
@@ -3291,24 +3303,24 @@ button[type=submit] {
     display: none;
   }
   .navbar .container .upper-side .hamburger {
-    margin-left: auto;
+    margin-inline-start: auto;
   }
   .slider .slider-container .inner-elements .container .social-media {
     display: none;
   }
   .slider .slider-container .swiper-slide .container {
-    padding-left: 15px;
-    padding-right: 40px;
+    padding-inline-start: 15px;
+    padding-inline-end: 40px;
   }
   .slider .slider-container .swiper-slide .container figure {
     width: 100%;
-    margin-left: 0;
+    margin-inline-start: 0;
     margin-top: 30px;
   }
   .benefits .col {
     width: 50%;
     flex-basis: auto;
-    border-right: none;
+    border-inline-end: none;
   }
   .benefits .col:nth-child(odd) {
     margin-top: 0;
@@ -3347,7 +3359,7 @@ button[type=submit] {
     margin: 15px 0;
   }
   .footer .col-12 .creation {
-    float: left;
+    float: start;
     margin-top: 5px;
   }
 }
