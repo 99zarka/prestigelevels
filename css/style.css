@@ -268,6 +268,16 @@ button[type=submit] {
   opacity: 1;
 }
 
+.swiper-pagination-bullet-active {
+            background: #b29f7a !important; /* Red for active dot */
+        }
+
+.swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23b29f7a'%2F%3E%3C%2Fsvg%3E") !important;
+}
+.swiper-button-prev {
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23b29f7a'%2F%3E%3C%2Fsvg%3E") !important;
+}
 /* VIDEO BG */
 .video-bg {
   width: 100%;
@@ -1096,6 +1106,10 @@ button[type=submit] {
   inset-inline-end: calc(-100% + 100px);
   top: 5px;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  color: #b29f7a;
+}
 .slider .slider-container .inner-elements .container .button-next {
   width: 40px;
   position: absolute;
@@ -1290,16 +1304,16 @@ button[type=submit] {
   position: relative;
 }
 .logos figure:hover img {
-  opacity: 1;
+  opacity: 0;
   transform: scale(1.2);
 }
 .logos figure:hover h6 {
-  opacity: 0;
+  opacity: 1;
   transform: scale(1);
 }
 .logos figure img {
   width: 100%;
-  opacity: 0;
+  opacity: 1;
 }
 .logos figure h6 {
   width: 100%;
@@ -1310,11 +1324,16 @@ button[type=submit] {
   top: 50%;
   margin-top: -10px;
   text-align: center;
-  opacity: 1;
+  opacity: 0;
   font-weight: 800;
   font-size: 13px;
   transform: scale(1.1);
 }
+
+.logos-slider {
+    padding: 50px 0;
+}
+
 
 /* BENEFITS */
 .benefits {
