@@ -57,7 +57,7 @@ theme.
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #26282b;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -1802,6 +1802,10 @@ button[type=submit] {
   background: #26282b;
   color: #fff;
   position: relative;
+}
+
+.property-customization i {
+  margin-inline: 15px; /* Adjust the value as needed */
 }
 .property-customization b {
   width: 100%;
