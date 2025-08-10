@@ -1668,16 +1668,126 @@ button[type=submit] {
 }
 /* GET CONSULTATION */
 .get-consultation {
+  color: white;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 150px;
-  /* margin-bottom: 100px; */
+  padding-top: 20px;
+  padding-bottom: 100px;
   background-size: auto 120%;
   background-position: inset-inline-end;
   background-repeat: no-repeat;
-  background-color: #e5e4df;
-  filter: sepia(40%) saturate(150%) hue-rotate(-15deg);
+  background-color: #373f54;
+  /* filter: sepia(40%) saturate(150%) hue-rotate(-15deg); */
+}
+.get-consultation h3 {
+
+}
+
+.get-consultation h5 {
+  margin-bottom: 20px;
+}
+
+  .get-consultation .placeholder-img {
+    display: none;
+  }
+
+.get-consultation .near-places {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.get-consultation .timeline-container {
+  width: 100%;
+  max-width: 512px;
+}
+
+.get-consultation .timeline-items-wrapper {
+  position: relative;
+}
+
+.get-consultation .timeline-line {
+  position: absolute;
+  top: 0;
+  right: -48px;
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+  border-radius: 9999px;
+}
+
+.get-consultation .timeline-item {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.get-consultation .timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.get-consultation .timeline-connector {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -48px;
+  width: 48px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.get-consultation .item-row {
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+}
+
+.get-consultation .content-block {
+  background-color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 16px 32px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+
+.get-consultation .content-block img {
+  margin-inline-end:15px ;
+}
+
+.get-consultation .distance-block {
+  background-color: #b29f7a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 200px;
+  font-weight: 700;
+  font-size: 18px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin-inline-start: -100px;
+  padding: 10px 50px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+}
+
+.get-consultation .location-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: rgb(31, 41, 55);
+}
+
+.get-consultation .location-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 
 .get-consultation .content-box {
@@ -3128,6 +3238,7 @@ button[type=submit] {
   color: #fff;
 }
 
+
 .footer .social-media {
   display: flex;
   justify-content: flex-end;
@@ -3396,6 +3507,12 @@ button[type=submit] {
   }
   .footer .contact-box ul {
     float: start;
+  }
+  .get-consultation h3 {
+    margin-top: 180px;
+  }
+  .get-consultation .placeholder-img {
+    display: block;
   }
 }
 /* RESPONSIVE MOBILE FIXES */
