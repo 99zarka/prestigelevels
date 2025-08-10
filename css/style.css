@@ -1630,6 +1630,9 @@ button[type=submit] {
   font-weight: 600;
 }
 
+.property-plans .tab-content img {
+  max-height: 75vh;
+}
 /* GET CONSULTATION */
 .get-consultation {
   width: 100%;
