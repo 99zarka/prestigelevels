@@ -1195,8 +1195,8 @@ button[type=submit] {
   position: absolute;
   inset-inline-start: -10%;
   top: -5%;
-  background: url(../images/side-pattern-bg.png);
-  background-size: contain;
+  /* background: url(../images/side-pattern-bg.png);
+  background-size: contain; */
 }
 .intro figure .holder {
   position: relative;
