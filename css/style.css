@@ -1180,6 +1180,7 @@ button[type=submit] {
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
+  padding-bottom: 50px;
 }
 .intro figure {
   display: inline-block;
