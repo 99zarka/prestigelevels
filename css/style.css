@@ -931,7 +931,7 @@ button[type=submit] {
 .slider .slider-container .swiper-slide .container h1 {
   font-size: 5vw;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   color: #B9A67F;
   margin-bottom: 20px;
 }
@@ -965,7 +965,7 @@ button[type=submit] {
   padding-bottom: 10px;
   position: relative;
   border: 2px solid #B9A67F;
-  padding: 0 40px;
+  padding: 5px 60px;
   box-shadow: 0 0 20px rgba(235, 207, 167, 0.4);
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
@@ -1152,7 +1152,7 @@ button[type=submit] {
 .page-header .container h1 {
   font-size: 5vw;
   color: #fff;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   color: #B9A67F;
   margin-bottom: 20px;
 }
@@ -1193,7 +1193,7 @@ button[type=submit] {
   width: 120%;
   height: 100%;
   position: absolute;
-  inset-inline-start: 5%;
+  inset-inline-start: -10%;
   top: -5%;
   background: url(../images/side-pattern-bg.png);
   background-size: contain;
@@ -1203,7 +1203,7 @@ button[type=submit] {
   width: 100%;
   float: inset-inline-start;
   display: block !important;
-  transform: translate(85px, -65px);
+  transform: translate(-70px, -35px);
 }
 .intro figure .holder img {
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
@@ -1222,7 +1222,7 @@ button[type=submit] {
 .intro .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .intro .content-box h4 span {
@@ -1290,15 +1290,16 @@ button[type=submit] {
   position: relative;
 }
 .logos figure:hover img {
-  opacity: 0;
+  opacity: 1;
   transform: scale(1.2);
 }
 .logos figure:hover h6 {
-  opacity: 1;
+  opacity: 0;
   transform: scale(1);
 }
 .logos figure img {
   width: 100%;
+  opacity: 0;
 }
 .logos figure h6 {
   width: 100%;
@@ -1309,7 +1310,7 @@ button[type=submit] {
   top: 50%;
   margin-top: -10px;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
   font-weight: 800;
   font-size: 13px;
   transform: scale(1.1);
@@ -1347,7 +1348,7 @@ button[type=submit] {
 .benefits h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .benefits h4 span {
@@ -1412,7 +1413,7 @@ button[type=submit] {
 .recent-gallery h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .recent-gallery h4 span {
@@ -1498,7 +1499,7 @@ button[type=submit] {
   width: 120%;
   height: 100%;
   position: absolute;
-  inset-inline-start: 5%;
+  inset-inline-start: -10%;
   top: -5%;
   background: url(../images/side-pattern-bg.png);
   background-size: contain;
@@ -1508,7 +1509,7 @@ button[type=submit] {
   width: 100%;
   float: inset-inline-start;
   display: block !important;
-  transform: translate(85px, -35px);
+  transform: translate(-25px, -35px);
 }
 .property-calculator figure .holder img {
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
@@ -1527,7 +1528,7 @@ button[type=submit] {
 .property-calculator .content-box h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .property-calculator .content-box h4 span {
@@ -1589,7 +1590,7 @@ button[type=submit] {
 .property-plans h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .property-plans h4 span {
@@ -1683,7 +1684,7 @@ button[type=submit] {
 .get-consultation h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .get-consultation h4 span {
@@ -1741,7 +1742,7 @@ button[type=submit] {
 .recent-posts h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .recent-posts h4 span {
@@ -1810,6 +1811,7 @@ button[type=submit] {
 
 .property-customization i {
   margin-inline: 15px; /* Adjust the value as needed */
+  color: #B9A67F ;
 }
 .property-customization b {
   width: 100%;
@@ -1822,7 +1824,7 @@ button[type=submit] {
   display: block;
   font-size: 30px;
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .property-customization h4 span {
@@ -1861,7 +1863,7 @@ button[type=submit] {
 }
 .apartment h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 20px;
 }
 .apartment h2 span {
@@ -1963,7 +1965,7 @@ button[type=submit] {
 }
 .about-content h2 {
   font-size: 4vw;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 20px;
 }
 .about-content h2 span {
@@ -2044,7 +2046,7 @@ button[type=submit] {
 .certificates h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .certificates h4 span {
@@ -2092,7 +2094,7 @@ button[type=submit] {
 .facilities h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .facilities h4 span {
@@ -2166,7 +2168,7 @@ button[type=submit] {
 }
 .faq .sidebox h3 {
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 20px;
 }
 .faq .sidebox p {
@@ -2189,7 +2191,7 @@ button[type=submit] {
   border: 1px solid #eee;
 }
 .sales-offices .office-box h5 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 20px;
   font-size: 26px;
 }
@@ -2230,7 +2232,7 @@ button[type=submit] {
 .intro-video h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .intro-video h4 span {
@@ -2280,7 +2282,7 @@ button[type=submit] {
 .press-relases figure figcaption h5 {
   display: block;
   font-size: 22px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .press-relases figure figcaption p {
@@ -2369,7 +2371,7 @@ button[type=submit] {
 .sales-team figure figcaption h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .sales-team figure figcaption h4 span {
@@ -2613,7 +2615,7 @@ button[type=submit] {
 .blog .sidebar .widget .title {
   width: 100%;
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 20px;
 }
 .blog .sidebar .widget .categories {
@@ -2732,7 +2734,7 @@ button[type=submit] {
 .contact h4 {
   display: block;
   font-size: 30px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   margin-bottom: 15px;
 }
 .contact h4 span {
@@ -2788,7 +2790,7 @@ button[type=submit] {
   width: 120%;
   height: 100%;
   position: absolute;
-  inset-inline-start: 5%;
+  inset-inline-start: -10%;
   top: -5%;
   background: url(../images/side-pattern-bg.png);
   background-size: contain;
@@ -2798,7 +2800,7 @@ button[type=submit] {
   width: 100%;
   float: inset-inline-start;
   display: block !important;
-  transform: translate(85px, -35px);
+  transform: translate(-25px, -35px);
 }
 .contact .map .holder iframe {
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
@@ -2810,6 +2812,7 @@ button[type=submit] {
   width: 100%;
   display: block;
   padding-inline-start: 10%;
+  margin-top: 120px;
 }
 .contact .contact-form h5 {
   margin-bottom: 40px;
@@ -2918,7 +2921,7 @@ button[type=submit] {
   height: 70px;
 }
 .footer-bar .inner h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
   font-size: 22px;
   margin-bottom: 15px;
 }
@@ -3037,7 +3040,7 @@ button[type=submit] {
 .footer .contact-box h5 {
   margin-bottom: 10px;
   font-size: 19px;
-  font-family: "Playfair Display", serif;
+  font-family: "Cairo", serif;
 }
 .footer .contact-box h3 {
   font-weight: 600;
