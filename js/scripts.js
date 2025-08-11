@@ -169,7 +169,8 @@
 			$(window).load(function(){
 				$('.gallery').isotope({
 				  itemSelector: '.gallery li',
-				  percentPosition: true
+				  percentPosition: true,
+				  isOriginLeft: false
 				});
 			});
 		
@@ -183,7 +184,8 @@
 			duration: 750,
 			easing: 'linear',
 			queue: false
-			}
+			},
+			isOriginLeft: false
 			});
 
 			$('.gallery-filter li a').click(function(){
