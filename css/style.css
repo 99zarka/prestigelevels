@@ -1835,6 +1835,7 @@ button[type=submit] {
 
 .get-consultation .location-logo {
   height: 40px;
+  width: 40px;
   object-fit: contain;
 }
 
@@ -3129,7 +3130,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  /* padding-top: 180px; */
+  padding-top: 180px;
   padding-bottom: 30px;
   background: #06273A;
 }
