@@ -1334,6 +1334,31 @@ button[type=submit] {
     padding: 50px 0;
 }
 
+/* OUTDOORS */
+.outdoors {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.outdoors h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.outdoors-slider {
+  padding: 40px 0;
+}
+.outdoors-slider figure {
+  margin: 0;
+}
+.outdoors-slider figure img {
+  max-height: 100vh;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 
 /* BENEFITS */
 .benefits {
