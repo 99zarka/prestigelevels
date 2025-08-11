@@ -1834,8 +1834,7 @@ button[type=submit] {
 }
 
 .get-consultation .location-logo {
-  width: 56px;
-  height: 56px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -1879,7 +1878,7 @@ button[type=submit] {
   margin-bottom: 15px;
 }
 .get-consultation h4 span {
-  color: #B9A67F;
+  color: white;
 }
 .get-consultation h3 {
   font-weight: 600;
