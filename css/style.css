@@ -1711,7 +1711,96 @@ button[type=submit] {
   max-height: 100vh;
 }
 /* GET CONSULTATION */
+
+/* GET CONSULTATION */
 .get-consultation {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 150px;
+  margin-bottom: 100px;
+  background-size: auto 120%;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #e5e4df;
+}
+.get-consultation .content-box {
+  width: 500px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 50px;
+  margin-bottom: -100px;
+  color: #fff;
+  background: #9f8054;
+  position: relative;
+  overflow: hidden;
+}
+.get-consultation .content-box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 200px 100vh 0;
+  border-color: transparent #ebcfa7 transparent transparent;
+  position: absolute;
+  inset-inline-end: 0;
+  top: 0;
+  opacity: 0.15;
+}
+.get-consultation b {
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  opacity: 0.2;
+}
+.get-consultation h4 {
+  display: block;
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 15px;
+}
+.get-consultation h4 span {
+  color: #ebcfa7;
+}
+.get-consultation h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.get-consultation p {
+  display: block;
+  padding-inline-end: 20%;
+  margin-bottom: 40px;
+}
+.get-consultation a {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  position: relative;
+  background: #26282b;
+  padding: 0 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.get-consultation a i {
+  margin-inline-start: 10px;
+}
+.get-consultation a:hover {
+  text-decoration: none;
+  background: #fff;
+  color: #9f8054;
+}
+
+/* .get-consultation {
   color: white;
   width: 100%;
   display: flex;
@@ -1722,7 +1811,7 @@ button[type=submit] {
   background-position: inset-inline-end;
   background-repeat: no-repeat;
   background-color: #373f54;
-  /* filter: sepia(40%) saturate(150%) hue-rotate(-15deg); */
+  filter: sepia(40%) saturate(150%) hue-rotate(-15deg);
 }
 .get-consultation h3 {
 
@@ -1734,7 +1823,7 @@ button[type=submit] {
 
   .get-consultation .placeholder-img {
     display: none;
-  }
+  } */
 
 .get-consultation .near-places {
   background-color: transparent;
@@ -1807,7 +1896,7 @@ button[type=submit] {
 }
 
 .get-consultation .distance-block {
-  background-color: #b29f7a;
+  background-color: #06273a;
   color: white;
   display: flex;
   align-items: center;

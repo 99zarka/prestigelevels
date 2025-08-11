@@ -263,7 +263,7 @@ var swiper = new Swiper('.logos-slider', {
     }
 });
 
-var swiper = new Swiper('.outdoors-slider', {
+/* var swiper = new Swiper('.outdoors-slider', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -278,4 +278,7 @@ var swiper = new Swiper('.outdoors-slider', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
+
 });
+ */
