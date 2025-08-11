@@ -3130,7 +3130,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 180px;
+  /* padding-top: 180px; */
   padding-bottom: 30px;
   background: #06273A;
 }
@@ -3566,7 +3566,7 @@ button[type=submit] {
     float: start;
   }
   .get-consultation h3 {
-    margin-top: 180px;
+    /* margin-top: 180px; */
   }
   .get-consultation .placeholder-img {
     display: block;
