@@ -3237,7 +3237,9 @@ button[type=submit] {
   color: #B9A67F;
 }
 .footer .contact-box {
-  float: inset-inline-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   color: #fff;
   text-align: end;
 }
@@ -3572,7 +3574,7 @@ button[type=submit] {
   }
   .footer .contact-box {
     float: start;
-    text-align: start;
+    text-align: end;
     margin-top: 80px;
   }
   .footer .contact-box ul {
