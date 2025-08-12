@@ -1719,7 +1719,7 @@ button[type=submit] {
 /* GET CONSULTATION */
 
 
-/* .get-consultation {
+.get-consultation {
   color: white;
   width: 100%;
   display: flex;
@@ -1730,7 +1730,7 @@ button[type=submit] {
   background-position: inset-inline-end;
   background-repeat: no-repeat;
   background-color: #373f54;
-  filter: sepia(40%) saturate(150%) hue-rotate(-15deg);
+  /* filter: sepia(40%) saturate(150%) hue-rotate(-15deg); */
 }
 .get-consultation h3 {
 
@@ -1740,9 +1740,9 @@ button[type=submit] {
   margin-bottom: 20px;
 }
 
-  .get-consultation .placeholder-img {
-    display: none;
-  } */
+.get-consultation .placeholder-img {
+  display: none;
+}
 
 .get-consultation .near-places {
   background-color: transparent;
@@ -1822,7 +1822,7 @@ button[type=submit] {
   justify-content: flex-end;
   width: 200px;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 15px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   margin-inline-start: -100px;
@@ -1832,7 +1832,7 @@ button[type=submit] {
 
 .get-consultation .location-name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(31, 41, 55);
 }
 
@@ -1843,16 +1843,18 @@ button[type=submit] {
 }
 
 .get-consultation .content-box {
-  width: 500px;
+  font-size: 20px;
+  width: 100%;
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   padding: 80px 50px;
   padding-inline-start: 70px;
   padding-inline-end: 20px;
   margin-bottom: -100px;
   color: #fff;
-  background: #B9A67F;
+  background: #b9a67f8a;
   position: relative;
   overflow: hidden;
 }
@@ -3576,13 +3578,35 @@ button[type=submit] {
   .footer .contact-box ul {
     float: start;
   }
+  .get-consultation{
+    background-image: url("../images/section-bg02.jpg") !important;
+
+  }
   .get-consultation h3 {
     /* margin-top: 180px; */
   }
   .get-consultation .placeholder-img {
     display: block;
   }
+  .get-consultation .content-box {
+  background: #b9a67f8a;
+
+  width: 100%;
+
+
+  }
+  .get-consultation .location-name {
+    font-size: 12px;
+  }
+  .get-consultation .content-block{
+    padding: 4px 2px;
+  }
+  .get-consultation .location-name {
+    font-size: 10px;
+    padding: 4px 2px;
+  }
 }
+
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
   .side-navigation {
@@ -3659,5 +3683,12 @@ button[type=submit] {
   .footer .col-12 .creation {
     float: start;
     margin-top: 5px;
+  }
+  .get-consultation .content-block{
+    padding: 4px 2px;
+  }
+  .get-consultation .location-name {
+    font-size: 10px;
+    padding: 4px 2px;
   }
 }
