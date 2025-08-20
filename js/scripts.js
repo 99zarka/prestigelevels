@@ -1,6 +1,9 @@
 (function($) {
+
 	$(document).ready(function() {
 		"use strict";
+
+
 		
 		
 	// HOVER TOGGLE
@@ -232,6 +235,8 @@
 		
 })(jQuery);
 
+
+
 var swiper = new Swiper('.logos-slider', {
     slidesPerView: 7,
     spaceBetween: 30,
@@ -287,3 +292,37 @@ var swiper = new Swiper('.logos-slider', {
 
 });
  */
+$(document).ready(function() {
+    // Hide success and error messages initially
+    $('#success').hide();
+    $('#error').hide();
+
+    // Form submission handler
+    $('#contact').on('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var form = $(this);
+        var url = form.attr('action');
+        var formData = form.serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: url,
+            data: formData,
+            success: function(response) {
+                // Assuming the server returns a success indicator in the response
+                // You might need to inspect the actual response from your server to determine success
+                // For now, let's assume any successful AJAX call means the form was sent.
+                // If the server returns specific JSON, you'd parse it here.
+                $('#success').fadeIn();
+                $('#error').fadeOut();
+                form[0].reset(); // Clear the form
+            },
+            error: function() {
+				$('#error').fadeOut();
+                $('#error').fadeIn();
+                $('#success').fadeOut();
+            }
+        });
+    });
+});
