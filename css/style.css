@@ -3137,6 +3137,22 @@ button[type=submit] {
   position: relative;
   z-index: 2;
 }
+
+#phone{
+  padding-inline-start: 70px; /* Add padding for the flag */
+}
+
+.contact .contact-form #contact .form-group .input-group {
+  position: relative;
+}
+
+.contact .contact-form #contact .form-group .input-group i {
+  position: absolute;
+  inset-inline-start: 15px; /* Adjust as needed for flag position */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3; /* Ensure flag is above input */
+}
 .contact .contact-form #contact .form-group input:focus + span {
   font-size: 16px;
   line-height: 16px;

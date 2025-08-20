@@ -357,5 +357,9 @@ $(document).ready(function() {
     // Prevent non-numeric input in phone number field
     $('#phone').on('input', function() {
         this.value = this.value.replace(/[^0-9]/g, '');
+		if(!this.value.toString().startsWith("05")){
+        	this.value = "05";
+		}
+
     });
 });
