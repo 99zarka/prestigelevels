@@ -230,6 +230,11 @@
 			$(window).load(function(){
 				$("body").addClass("page-loaded");	
 			});
+
+			// Set a maximum timeout for the preloader (5 seconds)
+			setTimeout(function(){
+				$("body").addClass("page-loaded");
+			}, 5000); // 5000 milliseconds = 5 seconds
 	
 		
 		
