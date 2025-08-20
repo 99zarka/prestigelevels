@@ -297,32 +297,27 @@ $(document).ready(function() {
     $('#success').hide();
     $('#error').hide();
 
-    // Form submission handler
+    // Listen for the iframe to load after form submission
+    $('#dummyframe').on('load', function() {
+        // This will trigger when the form submission to the external API completes
+        // (assuming the external API returns a page that loads into the iframe).
+        // We cannot reliably detect server-side success/failure from the external API
+        // due to Same-Origin Policy, so we'll assume success for now.
+        $('#success').fadeIn();
+        $('#error').fadeOut();
+        $('#contact')[0].reset(); // Clear the form
+    });
+
+    // Optional: Client-side validation to show error if form is not valid before submission
     $('#contact').on('submit', function(event) {
-        event.preventDefault(); // Prevent default form submission
-
-        var form = $(this);
-        var url = form.attr('action');
-        var formData = form.serialize();
-
-        $.ajax({
-            type: 'POST',
-            url: url,
-            data: formData,
-            success: function(response) {
-                // Assuming the server returns a success indicator in the response
-                // You might need to inspect the actual response from your server to determine success
-                // For now, let's assume any successful AJAX call means the form was sent.
-                // If the server returns specific JSON, you'd parse it here.
-                $('#success').fadeIn();
-                $('#error').fadeOut();
-                form[0].reset(); // Clear the form
-            },
-            error: function() {
-				$('#error').fadeOut();
-                $('#error').fadeIn();
-                $('#success').fadeOut();
-            }
-        });
+        if (!this.checkValidity()) {
+            event.preventDefault(); // Prevent default submission if form is invalid
+            $('#error').fadeIn();
+            $('#success').fadeOut();
+        } else {
+            // If form is valid, hide any previous alerts before submission
+            $('#success').fadeOut();
+            $('#error').fadeOut();
+        }
     });
 });
