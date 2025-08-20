@@ -317,6 +317,13 @@ $(document).ready(function() {
 
     // Optional: Client-side validation to show error if form is not valid before submission
     $('#contact').on('submit', function(event) {
+        const nameInput = $('#name');
+        let nameValue = nameInput.val();
+        if (typeof nameValue === 'string') {
+            nameValue = nameValue.replace(/ /g, '_');
+            nameInput.val(nameValue);
+        }
+
         const phoneNumberInput = $('#phone');
         const phoneNumber = phoneNumberInput.val();
         const phoneRegex = /^05\d{8}$/; // Starts with 05 and has 10 digits total
@@ -327,18 +334,30 @@ $(document).ready(function() {
 
         if (!this.checkValidity()) {
             event.preventDefault(); // Prevent default submission if form is invalid
+			if (typeof nameValue === "string") {
+                nameValue = nameValue.replace(/_/g, " ");
+                nameInput.val(nameValue);
+            }
 			$('#error').fadeOut();
             $('#error').text('الرجاء تعبئة جميع الحقول المطلوبة بشكل صحيح.'); // Generic error for other fields
             $('#error').fadeIn();
             $('#success').fadeOut();
         } else if (!phoneRegex.test(phoneNumber)) {
             event.preventDefault(); // Prevent default submission if phone number is invalid
+			if (typeof nameValue === "string") {
+                nameValue = nameValue.replace(/_/g, " ");
+                nameInput.val(nameValue);
+            }
 			$('#error').fadeOut();
             $('#error').text('رقم الجوال يجب أن يبدأ بـ 05 ويتكون من 10 أرقام.');
             $('#error').fadeIn();
             $('#success').fadeOut();
         } else if (selectedDate < today) {
             event.preventDefault(); // Prevent default submission if date is older than today
+			if (typeof nameValue === "string") {
+                nameValue = nameValue.replace(/_/g, " ");
+                nameInput.val(nameValue);
+            }
             $('#error').fadeOut();
             $('#error').text('لا يمكن تحديد تاريخ أقدم من اليوم.');
             $('#error').fadeIn();
