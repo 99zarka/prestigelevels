@@ -236,34 +236,6 @@
 })(jQuery);
 
 // Lazy loading images
-document.addEventListener("DOMContentLoaded", function() {
-    const lazyImages = document.querySelectorAll("img[data-src]");
-
-    if ("IntersectionObserver" in window) {
-        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    let lazyImage = entry.target;
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.removeAttribute("data-src");
-                    lazyImage.removeAttribute("loading");
-                    lazyImageObserver.unobserve(lazyImage);
-                }
-            });
-        });
-
-        lazyImages.forEach(function(lazyImage) {
-            lazyImageObserver.observe(lazyImage);
-        });
-    } else {
-        // Fallback for browsers that don't support Intersection Observer
-        lazyImages.forEach(function(lazyImage) {
-            lazyImage.src = lazyImage.dataset.src;
-            lazyImage.removeAttribute("data-src");
-            lazyImage.removeAttribute("loading");
-        });
-    }
-});
 
 
 
@@ -340,14 +312,50 @@ $(document).ready(function() {
 
     // Optional: Client-side validation to show error if form is not valid before submission
     $('#contact').on('submit', function(event) {
+        const phoneNumberInput = $('#phone');
+        const phoneNumber = phoneNumberInput.val();
+        const phoneRegex = /^05\d{8}$/; // Starts with 05 and has 10 digits total
+        const dateInput = $('#date');
+        const selectedDate = new Date(dateInput.val());
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Set to start of today for comparison
+
         if (!this.checkValidity()) {
             event.preventDefault(); // Prevent default submission if form is invalid
+			$('#error').fadeOut();
+            $('#error').text('الرجاء تعبئة جميع الحقول المطلوبة بشكل صحيح.'); // Generic error for other fields
             $('#error').fadeIn();
             $('#success').fadeOut();
-        } else {
+        } else if (!phoneRegex.test(phoneNumber)) {
+            event.preventDefault(); // Prevent default submission if phone number is invalid
+			$('#error').fadeOut();
+            $('#error').text('رقم الجوال يجب أن يبدأ بـ 05 ويتكون من 10 أرقام.');
+            $('#error').fadeIn();
+            $('#success').fadeOut();
+        } else if (selectedDate < today) {
+            event.preventDefault(); // Prevent default submission if date is older than today
+            $('#error').fadeOut();
+            $('#error').text('لا يمكن تحديد تاريخ أقدم من اليوم.');
+            $('#error').fadeIn();
+            $('#success').fadeOut();
+        }
+        else {
             // If form is valid, hide any previous alerts before submission
             $('#success').fadeOut();
             $('#error').fadeOut();
         }
+    });
+
+    // Set min attribute for date input to today's date
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    const yyyy = today.getFullYear();
+    const minDate = yyyy + '-' + mm + '-' + dd;
+    $('#date').attr('min', minDate);
+
+    // Prevent non-numeric input in phone number field
+    $('#phone').on('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');
     });
 });
