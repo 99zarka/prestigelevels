@@ -283,7 +283,7 @@ var swiper = new Swiper('.logos-slider', {
  */
 
 
-var swiperOne = new Swiper('.outdoors-slider-one', {
+var swiperAll = new Swiper('.outdoors-slider-all', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -294,9 +294,13 @@ var swiperOne = new Swiper('.outdoors-slider-one', {
         nextEl: '#carousel-tab-one .swiper-button-next',
         prevEl: '#carousel-tab-one .swiper-button-prev',
     },
+    pagination: {
+        el: '.swiper-pagination-all',
+        clickable: true,
+    },
 });
 
-var swiperTwo = new Swiper('.outdoors-slider-two', {
+var swiperOne = new Swiper('.outdoors-slider-one', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -306,6 +310,10 @@ var swiperTwo = new Swiper('.outdoors-slider-two', {
     navigation: {
         nextEl: '#carousel-tab-two .swiper-button-next',
         prevEl: '#carousel-tab-two .swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination-one',
+        clickable: true,
     },
 });
 
@@ -319,6 +327,10 @@ var swiperThree = new Swiper('.outdoors-slider-three', {
     navigation: {
         nextEl: '#carousel-tab-three .swiper-button-next',
         prevEl: '#carousel-tab-three .swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination-three',
+        clickable: true,
     },
 });
 
@@ -397,11 +409,11 @@ $(document).ready(function() {
     $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
         var targetTabId = $(e.target).attr('href'); // activated tab
         if (targetTabId === '#carousel-tab-one') {
-            swiperOne.update();
+            swiperAll.update(); // Update the new swiper for "الكل" tab
         } else if (targetTabId === '#carousel-tab-two') {
-            swiperTwo.update();
+            swiperOne.update(); // This is now for "تصميمات داخلية"
         } else if (targetTabId === '#carousel-tab-three') {
-            swiperThree.update();
+            swiperThree.update(); // This is for "تصميمات خارجية"
         }
     });
 

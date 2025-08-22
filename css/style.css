@@ -1473,9 +1473,10 @@ button[type=submit] {
 }
 .outdoors figure {
   margin: 0;
+  height: 100vh;
 }
 .outdoors figure img {
-  max-height: 100vh;
+  max-height: 95vh;
   width: auto;
   display: block;
   margin: 0 auto;
@@ -3870,3 +3871,5 @@ button[type=submit] {
     margin-top: 10px;
   }
 }
+
+
