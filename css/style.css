@@ -3426,6 +3426,7 @@ button[type=submit] {
 }
 .footer .contact-box p {
   margin-bottom: 10px;
+  text-align: end;
 }
 .footer .contact-box p a {
   color: #fff;
@@ -3875,6 +3876,7 @@ button[type=submit] {
   .footer figure {
     text-align: end;
   }
+
 
   .footer .col-12 .copyright,
   .footer .col-12 .creation {
