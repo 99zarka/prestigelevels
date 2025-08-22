@@ -1505,7 +1505,9 @@ button[type=submit] {
   object-fit: contain; /* Added to ensure images fit within the max-height without cropping */
 }
 
-
+.carousel-filter{
+  padding: 70px 0;
+}
 .carousel-filter .nav-pills {
   margin-bottom: 16px;
 }
