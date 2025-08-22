@@ -283,7 +283,7 @@ var swiper = new Swiper('.logos-slider', {
  */
 
 
-/* var swiper = new Swiper('.outdoors-slider', {
+var swiper = new Swiper('.outdoors-slider', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
@@ -301,7 +301,7 @@ var swiper = new Swiper('.logos-slider', {
 
 
 });
- */
+
 $(document).ready(function() {
     // Hide success and error messages initially
     $('#success').hide();
