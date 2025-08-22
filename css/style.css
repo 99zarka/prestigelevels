@@ -3691,6 +3691,8 @@ button[type=submit] {
   .get-consultation .placeholder-img {
     display: block;
   }
+    margin: 0 auto;
+  }
   .get-consultation .content-box {
   background: #b9a67f8a;
   width: 100%;
@@ -3704,6 +3706,11 @@ button[type=submit] {
   .get-consultation .location-name {
     font-size: 10px;
     padding: 4px 2px;
+  }
+  .get-consultation figure {
+    display: block !important;
+    margin: 0;
+    position: relative;
   }
 }
 
