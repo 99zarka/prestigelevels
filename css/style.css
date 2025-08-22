@@ -260,8 +260,14 @@ button[type=submit] {
   z-index: 2;
 }
 .gallery-container .gallery-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
   background: #fff;
   opacity: 0.5;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .gallery-container .gallery-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #B9A67F;
@@ -1455,7 +1461,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .outdoors h2 {
   text-align: center;
@@ -1465,16 +1471,24 @@ button[type=submit] {
 .outdoors-slider {
   padding: 40px 0;
 }
-.outdoors-slider figure {
+.outdoors figure {
   margin: 0;
 }
-.outdoors-slider figure img {
+.outdoors figure img {
   max-height: 100vh;
   width: auto;
   display: block;
   margin: 0 auto;
+  object-fit: contain; /* Added to ensure images fit within the max-height without cropping */
 }
 
+
+.carousel-filter .nav-pills {
+  margin-bottom: 16px;
+}
+.carousel-filter .nav-pills .nav-item .nav-link {
+  font-size: 1rem;
+}
 
 /* BENEFITS */
 .benefits {

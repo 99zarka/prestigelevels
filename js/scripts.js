@@ -283,23 +283,43 @@ var swiper = new Swiper('.logos-slider', {
  */
 
 
-var swiper = new Swiper('.outdoors-slider', {
+var swiperOne = new Swiper('.outdoors-slider-one', {
     slidesPerView: 1,
     loop: true,
     autoplay: {
         delay: 3000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    navigation: {
+        nextEl: '#carousel-tab-one .swiper-button-next',
+        prevEl: '#carousel-tab-one .swiper-button-prev',
+    },
+});
+
+var swiperTwo = new Swiper('.outdoors-slider-two', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '#carousel-tab-two .swiper-button-next',
+        prevEl: '#carousel-tab-two .swiper-button-prev',
     },
+});
 
-
+var swiperThree = new Swiper('.outdoors-slider-three', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '#carousel-tab-three .swiper-button-next',
+        prevEl: '#carousel-tab-three .swiper-button-prev',
+    },
 });
 
 $(document).ready(function() {
@@ -370,6 +390,18 @@ $(document).ready(function() {
             // If form is valid, hide any previous alerts before submission
             $('#success').fadeOut();
             $('#error').fadeOut();
+        }
+    });
+
+    // Handle Swiper update on tab change
+    $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+        var targetTabId = $(e.target).attr('href'); // activated tab
+        if (targetTabId === '#carousel-tab-one') {
+            swiperOne.update();
+        } else if (targetTabId === '#carousel-tab-two') {
+            swiperTwo.update();
+        } else if (targetTabId === '#carousel-tab-three') {
+            swiperThree.update();
         }
     });
 
