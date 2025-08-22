@@ -410,10 +410,16 @@ $(document).ready(function() {
         var targetTabId = $(e.target).attr('href'); // activated tab
         if (targetTabId === '#carousel-tab-one') {
             swiperAll.update(); // Update the new swiper for "الكل" tab
+            swiperAll.pagination.render();
+            swiperAll.pagination.update();
         } else if (targetTabId === '#carousel-tab-two') {
             swiperOne.update(); // This is now for "تصميمات داخلية"
+            swiperOne.pagination.render();
+            swiperOne.pagination.update();
         } else if (targetTabId === '#carousel-tab-three') {
             swiperThree.update(); // This is for "تصميمات خارجية"
+            swiperThree.pagination.render();
+            swiperThree.pagination.update();
         }
     });
 
