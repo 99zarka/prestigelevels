@@ -291,8 +291,8 @@ var swiperAll = new Swiper('.outdoors-slider-all', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '#carousel-tab-one .swiper-button-next',
-        prevEl: '#carousel-tab-one .swiper-button-prev',
+        nextEl: '#carousel-buttons-all .swiper-button-next',
+        prevEl: '#carousel-buttons-all .swiper-button-prev',
     },
     pagination: {
         el: '.swiper-pagination-all',
@@ -308,8 +308,8 @@ var swiperOne = new Swiper('.outdoors-slider-one', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '#carousel-tab-two .swiper-button-next',
-        prevEl: '#carousel-tab-two .swiper-button-prev',
+        nextEl: '#carousel-buttons-all .swiper-button-next',
+        prevEl: '#carousel-buttons-all .swiper-button-prev',
     },
     pagination: {
         el: '.swiper-pagination-one',
@@ -325,8 +325,8 @@ var swiperThree = new Swiper('.outdoors-slider-three', {
         disableOnInteraction: false,
     },
     navigation: {
-        nextEl: '#carousel-tab-three .swiper-button-next',
-        prevEl: '#carousel-tab-three .swiper-button-prev',
+        nextEl: '#carousel-buttons-all .swiper-button-next',
+        prevEl: '#carousel-buttons-all .swiper-button-prev',
     },
     pagination: {
         el: '.swiper-pagination-three',
