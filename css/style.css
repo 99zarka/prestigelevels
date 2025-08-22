@@ -64,6 +64,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: start;
 }
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 /* HTML ELEMENT */
 img {
