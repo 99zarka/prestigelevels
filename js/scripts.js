@@ -243,7 +243,7 @@
 // Lazy loading images
 
 
-
+/* 
 var swiper = new Swiper('.logos-slider', {
     slidesPerView: 7,
     spaceBetween: 30,
@@ -279,6 +279,9 @@ var swiper = new Swiper('.logos-slider', {
         }
     }
 });
+
+ */
+
 
 /* var swiper = new Swiper('.outdoors-slider', {
     slidesPerView: 1,

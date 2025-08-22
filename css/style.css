@@ -3691,6 +3691,7 @@ button[type=submit] {
   .get-consultation .placeholder-img {
     display: block;
   }
+  div:has(.content-box) {
     margin: 0 auto;
   }
   .get-consultation .content-box {
