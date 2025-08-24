@@ -319,7 +319,7 @@ button[type=submit] {
   background: linear-gradient(161deg, rgb(38, 40, 43) 0%, rgb(38, 40, 43) 49%, rgb(159, 128, 84) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#06273A",endColorstr="#B9A67F",GradientType=1);
 }
-.video-bg video {
+.video-bg video, .video-bg img {
   min-width: 100%;
   min-height: 100%;
   float: start;
