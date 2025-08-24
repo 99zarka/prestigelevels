@@ -1310,7 +1310,7 @@ button[type=submit] {
 }
 .intro p {
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: inter-character;
 }
 .intro figure {
   display: inline-block;
@@ -3277,7 +3277,7 @@ button[type=submit] {
 }
 .footer-bar p {
   text-align: justify;
-  text-justify: inter-word;
+  text-justify: inter-character;
 }
 .footer-bar .inner {
   background: #B9A67F;
