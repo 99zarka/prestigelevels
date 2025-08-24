@@ -1308,10 +1308,6 @@ button[type=submit] {
   z-index: 2;
   padding-bottom: 50px;
 }
-.intro p {
-  text-align: justify;
-  text-justify: inter-character;
-}
 .intro figure {
   display: inline-block;
   margin-bottom: 0;
@@ -1366,6 +1362,8 @@ button[type=submit] {
   display: block;
   padding-inline-end: 40%;
   margin-bottom: 30px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .intro .content-box a {
   display: inline-block;
@@ -3277,7 +3275,7 @@ button[type=submit] {
 }
 .footer-bar p {
   text-align: justify;
-  text-justify: inter-character;
+  text-justify: inter-word;
 }
 .footer-bar .inner {
   background: #B9A67F;
@@ -3580,6 +3578,9 @@ button[type=submit] {
   }
   .intro .content-box {
     padding-inline-start: 0;
+  }
+  .intro .content-box p {
+    padding-inline-end: 15%;
   }
   .logos figure img {
     padding: 0 10%;
