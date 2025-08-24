@@ -64,10 +64,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: start;
 }
-p {
-  text-align: justify;
-  text-justify: inter-word;
-}
 
 /* HTML ELEMENT */
 img {
@@ -1311,6 +1307,10 @@ button[type=submit] {
   position: relative;
   z-index: 2;
   padding-bottom: 50px;
+}
+.intro p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 .intro figure {
   display: inline-block;
@@ -3274,6 +3274,10 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -80px;
+}
+.footer-bar p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 .footer-bar .inner {
   background: #B9A67F;
