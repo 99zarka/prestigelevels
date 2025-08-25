@@ -3866,6 +3866,12 @@ button[type=submit] {
     float: start;
     margin-top: 5px;
   }
+  .get-consultation h3{
+    font-size: 18px;
+  }
+  .get-consultation h4{
+    font-size: 18px;
+  }
   .get-consultation .content-block{
     padding: 4px 2px;
   }
