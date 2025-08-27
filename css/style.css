@@ -335,22 +335,35 @@ button[type=submit] {
 }
 .nav-pills .nav-item {
   display: inline-block;
-  margin-inline-end: 30px;
+  margin-inline-end: 10px; /* Adjusted spacing */
 }
 .nav-pills .nav-item:last-child {
   margin-inline-end: 0;
 }
 .nav-pills .nav-item .nav-link {
-  background: none;
-  color: #06273A;
-  border-bottom: 2px solid transparent;
-  padding: 4px 0;
-  border-radius: 0;
+  background-color: white; /* White background */
+  color: #06273A; /* Blue text */
+  border: 1px solid #06273A; /* Blue border */
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 5px; /* Slight rounded corners */
   font-weight: 600;
   font-size: 14px;
+  -webkit-transition: 0.25s ease-in-out; /* Add transition for smooth hover effects */
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.nav-pills .nav-item .nav-link:hover {
+  text-decoration: none; /* Remove underline on hover */
+  background-color: #06273A; /* Dark blue background on hover */
+  color: white; /* White text on hover */
 }
 .nav-pills .nav-item .nav-link.active {
-  border-bottom: 2px solid #06273A;
+  background-color: #06273A; /* Dark blue background for active */
+  color: white; /* White text for active */
+  border: 1px solid #06273A; /* Dark blue border for active */
+  border-bottom: 1px solid #06273A; /* Ensure border-bottom is consistent */
 }
 
 /* BREADCRUMB */
