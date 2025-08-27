@@ -1497,10 +1497,11 @@ button[type=submit] {
 }
 .outdoors figure img {
   max-height: 80vh;
-  width: auto;
+  height: 80vh; /* Fixed height for all images */
+  width: 100%; /* Ensure images take full width of their container */
   display: block;
   margin: 0 auto;
-  object-fit: contain; /* Added to ensure images fit within the max-height without cropping */
+  object-fit: cover; /* Cover the area, cropping if necessary */
 }
 
 .carousel-filter{
@@ -2195,6 +2196,21 @@ button[type=submit] {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px 10px;
   margin: 15px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.property-customization figure:hover {
+  background-color: #B9A67F;
+  border-color: #B9A67F;
+  cursor: pointer;
+}
+
+.property-customization figure:hover figcaption {
+  color: #06273A;
+}
+
+.property-customization figure:hover i {
+  color: #06273A;
 }
 .property-customization figure img {
   height: 40px;
