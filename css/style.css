@@ -1506,6 +1506,12 @@ button[type=submit] {
 .carousel-filter{
   padding: 70px 0;
 }
+.carousel-filter h4 {
+  display: block;
+  font-size: 30px;
+  font-family: "Cairo", serif;
+  margin-bottom: 15px;
+}
 .carousel-filter .nav-pills {
   margin-bottom: 16px;
 }
