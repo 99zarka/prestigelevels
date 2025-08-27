@@ -2200,17 +2200,17 @@ button[type=submit] {
 }
 
 .property-customization figure:hover {
-  background-color: #B9A67F;
+  background-color: #B9A67F80;
   border-color: #B9A67F;
   cursor: pointer;
 }
 
 .property-customization figure:hover figcaption {
-  color: #06273A;
+  color: #fff;
 }
 
 .property-customization figure:hover i {
-  color: #06273A;
+  color: #fff;
 }
 .property-customization figure img {
   height: 40px;
@@ -3307,7 +3307,7 @@ button[type=submit] {
 .footer-bar .inner figure {
   margin-bottom: 20px;
   float: inset-inline-start;
-  margin-inline-end: 30px;
+  margin-inline-end: 0px;
 }
 .footer-bar .inner figure img {
   height: 70px;
@@ -3751,11 +3751,12 @@ button[type=submit] {
     margin: 8px 0;
   }
   .footer-bar .inner figure {
-    width: 70px;
+    width: 100px;
     margin-inline-end: 0;
   }
   .footer-bar .inner figure img {
-    height: 50px;
+    height: 70px;
+    width: 100px;
   }
   .footer {
     padding-top: 150px;
