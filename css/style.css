@@ -3584,6 +3584,9 @@ button[type=submit] {
 }
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px), only screen and (max-device-width: 991px) {
+  .nav-pills .nav-item .nav-link {
+    padding: 10px 8px; /* Adjusted padding */
+  }
   .side-navigation .side-content {
     display: block;
   }
